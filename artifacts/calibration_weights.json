@@ -1,0 +1,230 @@
+{
+  "base_log_odds": -3.976581706251405,
+  "threshold": 0.5,
+  "weights": {
+    "is_balanced_pair": {
+      "name": "is_balanced_pair",
+      "p_pos": 0.8931288909384367,
+      "p_neg": 0.012767070686978669,
+      "llr_true": 4.247861651701343,
+      "llr_false": -2.2232824887154545
+    },
+    "is_amount_match": {
+      "name": "is_amount_match",
+      "p_pos": 0.9028130043809085,
+      "p_neg": 0.025575220856269378,
+      "llr_true": 3.5638915019061037,
+      "llr_false": -2.305210414199328
+    },
+    "is_opposite_sides": {
+      "name": "is_opposite_sides",
+      "p_pos": 0.9519252939820152,
+      "p_neg": 0.4999697309077701,
+      "llr_true": 0.643939000599032,
+      "llr_false": -2.3419124583886624
+    },
+    "same_side": {
+      "name": "same_side",
+      "p_pos": 0.04807470601798478,
+      "p_neg": 0.5000302690922299,
+      "llr_true": -2.341912458388663,
+      "llr_false": 0.643939000599032
+    },
+    "same_prefix": {
+      "name": "same_prefix",
+      "p_pos": 0.09073091999077704,
+      "p_neg": 0.3329405558270165,
+      "llr_true": -1.3000657600112442,
+      "llr_false": 0.3097619043416693
+    },
+    "same_suffix": {
+      "name": "same_suffix",
+      "p_pos": 0.7817615863500116,
+      "p_neg": 0.8569677288235269,
+      "llr_true": -0.09185044463622548,
+      "llr_false": 0.42251782843371427
+    },
+    "has_same_sogd_base": {
+      "name": "has_same_sogd_base",
+      "p_pos": 0.05038044731381139,
+      "p_neg": 0.0017275003351220925,
+      "llr_true": 3.372927679030218,
+      "llr_false": -0.049964851269572015
+    },
+    "is_base_reversal": {
+      "name": "is_base_reversal",
+      "p_pos": 0.05038044731381139,
+      "p_neg": 0.0017275003351220925,
+      "llr_true": 3.372927679030218,
+      "llr_false": -0.049964851269572015
+    },
+    "same_side_shared_base": {
+      "name": "same_side_shared_base",
+      "p_pos": 0.021789255245561447,
+      "p_neg": 0.0006248405467462887,
+      "llr_true": 3.551675756648113,
+      "llr_false": -0.021405110886028093
+    },
+    "sequential_sogd": {
+      "name": "sequential_sogd",
+      "p_pos": 0.0012681577127046345,
+      "p_neg": 0.005857069346490299,
+      "llr_true": -1.5300841395858218,
+      "llr_false": 0.004605326743680229
+    },
+    "same_branch": {
+      "name": "same_branch",
+      "p_pos": 0.9998847129352086,
+      "p_neg": 0.03390354537553133,
+      "llr_true": 3.384120393004327,
+      "llr_false": -9.03359372414855
+    },
+    "has_sogd_base_in_partner_remarks": {
+      "name": "has_sogd_base_in_partner_remarks",
+      "p_pos": 0.04138805626008762,
+      "p_neg": 1.5134546114962012e-05,
+      "llr_true": 7.913767669133868,
+      "llr_false": -0.042253798107640045
+    },
+    "has_shared_12_digit_id": {
+      "name": "has_shared_12_digit_id",
+      "p_pos": 0.49377449850126814,
+      "p_neg": 0.004136055245417476,
+      "llr_true": 4.782336437876021,
+      "llr_false": -0.6766284214531744
+    },
+    "has_shared_15_digit_id": {
+      "name": "has_shared_15_digit_id",
+      "p_pos": 0.4859349780954577,
+      "p_neg": 0.0004518743054324372,
+      "llr_true": 6.980426048172047,
+      "llr_false": -0.6649535433364421
+    },
+    "share_long_number_any": {
+      "name": "share_long_number_any",
+      "p_pos": 0.5583352547844131,
+      "p_neg": 0.008832088697088545,
+      "llr_true": 4.146568064810029,
+      "llr_false": -0.8083328569187891
+    },
+    "pattern_dr_contract_payment_simple_cr_contract_payment_simple": {
+      "name": "pattern_dr_contract_payment_simple_cr_contract_payment_simple",
+      "p_pos": 0.1827299976942587,
+      "p_neg": 0.04403071880445734,
+      "llr_true": 1.423122095929771,
+      "llr_false": -0.15675625945264812
+    },
+    "pattern_dr_contract_payment_simple_cr_noise": {
+      "name": "pattern_dr_contract_payment_simple_cr_noise",
+      "p_pos": 0.034931980631773114,
+      "p_neg": 0.09255207364902555,
+      "llr_true": -0.974368684388413,
+      "llr_false": 0.061562402185686364
+    },
+    "pattern_dr_police_admin_payment_canonical_cr_police_admin_payment_canonical": {
+      "name": "pattern_dr_police_admin_payment_canonical_cr_police_admin_payment_canonical",
+      "p_pos": 0.16105602951348857,
+      "p_neg": 0.030288550932071834,
+      "llr_true": 1.6709825297617507,
+      "llr_false": -0.14485462912129338
+    },
+    "pattern_dr_police_admin_payment_with_date_cr_police_admin_payment_canonical": {
+      "name": "pattern_dr_police_admin_payment_with_date_cr_police_admin_payment_canonical",
+      "p_pos": 0.018330643301821537,
+      "p_neg": 0.006912163418504793,
+      "llr_true": 0.975291482861293,
+      "llr_false": -0.01156456822147586
+    },
+    "pattern_dr_noise_cr_interbank_pipe_fx_value_same_day": {
+      "name": "pattern_dr_noise_cr_interbank_pipe_fx_value_same_day",
+      "p_pos": 0.046691261240488814,
+      "p_neg": 0.015953973683186386,
+      "llr_true": 1.0738490897490753,
+      "llr_false": -0.03173385436156743
+    },
+    "pattern_dr_interbank_pipe_fx_value_same_day_cr_treasury_xnmb_pgd": {
+      "name": "pattern_dr_interbank_pipe_fx_value_same_day_cr_treasury_xnmb_pgd",
+      "p_pos": 0.03400968411344247,
+      "p_neg": 0.0031760926061255995,
+      "llr_true": 2.3709936098668454,
+      "llr_false": -0.031420322688594196
+    },
+    "pattern_dr_interbank_pipe_fx_value_same_day_cr_treasury_hcm_fx_mbnt": {
+      "name": "pattern_dr_interbank_pipe_fx_value_same_day_cr_treasury_hcm_fx_mbnt",
+      "p_pos": 0.023403274152640072,
+      "p_neg": 0.002462606860705962,
+      "llr_true": 2.251655445295508,
+      "llr_false": -0.021215835899462514
+    },
+    "pattern_dr_treasury_xnmb_pgd_cr_interbank_pipe_fx_value_same_day": {
+      "name": "pattern_dr_treasury_xnmb_pgd_cr_interbank_pipe_fx_value_same_day",
+      "p_pos": 0.03377910998385981,
+      "p_neg": 0.0033404105353737586,
+      "llr_true": 2.313748849386124,
+      "llr_false": -0.031016804134066937
+    },
+    "pattern_dr_loan_settlement_hdtg_shbfc_cr_interbank_pipe_mm_treasury": {
+      "name": "pattern_dr_loan_settlement_hdtg_shbfc_cr_interbank_pipe_mm_treasury",
+      "p_pos": 0.036776573668434405,
+      "p_neg": 0.001074552774162303,
+      "llr_true": 3.5329565063891186,
+      "llr_false": -0.03639475284590702
+    },
+    "pattern_dr_interbank_pipe_mm_treasury_cr_loan_settlement_hdtg_shbfc": {
+      "name": "pattern_dr_interbank_pipe_mm_treasury_cr_loan_settlement_hdtg_shbfc",
+      "p_pos": 0.02547844131888402,
+      "p_neg": 0.0010442836819323789,
+      "llr_true": 3.194501477566083,
+      "llr_false": -0.024763808140342614
+    },
+    "pattern_dr_other_cr_other": {
+      "name": "pattern_dr_other_cr_other",
+      "p_pos": 0.40385058796403045,
+      "p_neg": 0.7991840317566019,
+      "llr_true": -0.6825462690658907,
+      "llr_false": 1.0881024192027764
+    },
+    "kw_hdtg": {
+      "name": "kw_hdtg",
+      "p_pos": 0.062139727922527095,
+      "p_neg": 0.023123424385645533,
+      "llr_true": 0.988539379093394,
+      "llr_false": -0.04075933984744347
+    },
+    "kw_xnmb": {
+      "name": "kw_xnmb",
+      "p_pos": 0.06675121051418031,
+      "p_neg": 0.03506241919233414,
+      "llr_true": 0.6438425535545238,
+      "llr_false": -0.033391595447518616
+    },
+    "kw_shbfc": {
+      "name": "kw_shbfc",
+      "p_pos": 0.05499192990546461,
+      "p_neg": 0.02051595829783922,
+      "llr_true": 0.9859834086154855,
+      "llr_false": -0.035832477722238756
+    },
+    "kw_interest": {
+      "name": "kw_interest",
+      "p_pos": 0.05314733686880332,
+      "p_neg": 0.04656035008367242,
+      "llr_true": 0.13231867520934049,
+      "llr_false": -0.006932631492031168
+    },
+    "prefix_combo_afsf_ctsf": {
+      "name": "prefix_combo_afsf_ctsf",
+      "p_pos": 0.09303666128660364,
+      "p_neg": 0.06250351337677669,
+      "llr_true": 0.39777085366594067,
+      "llr_false": -0.03311098131958038
+    },
+    "prefix_combo_other": {
+      "name": "prefix_combo_other",
+      "p_pos": 0.9069633387133964,
+      "p_neg": 0.9374964866232233,
+      "llr_true": -0.03311098131958038,
+      "llr_false": 0.3977708536659395
+    }
+  }
+}

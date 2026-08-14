@@ -1,0 +1,12 @@
+fastapi==0.111.0
+uvicorn==0.30.0
+python-multipart==0.0.9
+aiofiles==23.2.1
+pandas==2.2.2
+numpy==1.26.4
+torch==2.3.0
+sentence-transformers==3.0.1
+umap-learn==0.5.6
+hdbscan==0.8.40
+openai==1.35.0
+scikit-learn==1.5.0
