@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ── Design tokens ──────────────────────────────────────────────── */
+  --color-navy: #0f1e3c;
+  --color-surface: #1a2f52;
+  --color-surface-hover: #243b68;
+  --color-ink: #f0ede6;
+  --color-muted: #8a9bb0;
+  --color-accent: #e8a230;
+  --color-edge: #243b68;
+  --color-success: #3dbd7d;
+  --color-danger: #e05555;
+
+  /* Mechanism palette — also mirrored in src/constants.js for inline use */
+  --color-mech-same-sogd: #e8a230;
+  --color-mech-refno: #3a8fa4;
+  --color-mech-keywords: #3dbd7d;
+  --color-mech-prefix: #f97316;
+  --color-mech-llm: #a78bfa;
+  --color-mech-balanced: #8a9bb0;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-navy);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbars tuned to the navy surface so long tables don't break the theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-surface-hover) transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--color-surface-hover);
+  border-radius: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.25s ease-out both;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
