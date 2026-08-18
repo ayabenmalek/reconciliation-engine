@@ -1,5 +1,5 @@
 # GL Transaction Reconciliation Engine
-## SHB Bank — Automated General Ledger Reconciliation
+##  Bank — Automated General Ledger Reconciliation
 
 ### What it does
 This system automatically reconciles General Ledger transactions using a
